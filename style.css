@@ -64,6 +64,9 @@ html {
   line-height: 150%;
   color: #636060;
 }
+html{
+  scroll-behavior:smooth
+}
 body,
 h1,
 h2,
@@ -102,15 +105,13 @@ h2{
 }
 
 /* Header */
-header {
+header,
+footer {
   max-width: 100%;
   background-color: rgb(49, 65, 109);
   color: #fff;
 }
-.container {
-}
-.header__nav {
-}
+
 .header__nav-list {
   display: flex;
   align-items: center;
@@ -194,7 +195,8 @@ header {
 .language__wrapper,
 .employment__wrapper,
 .interests__wrapper,
-.projects__wrapper {
+.projects__wrapper,
+.footer__wrapper {
   
   margin-right: 1rem;
   margin-left: 1rem;
@@ -285,4 +287,30 @@ header {
 }
 .music::after {
   background-image: url(../datamola-cv/icons/headphones.png);
+}
+.container {
+}
+.footer__wrapper {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.footer__author{
+  position: relative;
+  padding-left: 2rem;
+}
+.footer__author::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  content: '';
+  background-image: url(../datamola-cv/icons/github-mark-white.png);  
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
