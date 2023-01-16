@@ -116,8 +116,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .header__nav-item {
   margin-right: 1em;
