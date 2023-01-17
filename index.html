@@ -1,37 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../datamola-cv/icons/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../datamola-cv/icons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="../datamola-cv/icons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="../datamola-cv/icons/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="../datamola-cv/icons/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Datamola CV</title>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="header__nav">
+        
           <ul class="header__nav-list">
             <li class="header__nav-item">
               <a href="#contact" class="header__nav-link"> Contacts </a>
@@ -57,19 +37,24 @@
             <li class="header__nav-item">
               <a href="#employment" class="header__nav-link"> Employment </a>
             </li>
+            <li class="header__close">
+              <img
+                src="../plants/icons/close.svg"
+                alt="close burger"
+                class="close"
+              />
+            </li>
           </ul>
-        </div>
+          <button class="header__btn burger">
+            <span class="row"> </span>
+          </button>
       </div>
     </header>
     <main>
       <section class="main__info">
         <div class="container">
           <div class="main__info-wrapper">
-            <img
-              class="profile_foto"
-              src="../datamola-cv/images/IMG_6839.jpg"
-              alt="profile foto"
-            />
+            <img class="profile_foto" src="./images/IMG_6839.jpg" alt="profile foto">
             <div class="main__info-descr">
               <h1 class="main__info-name">ULADZIMIR <span>Bankouski</span></h1>
               <p class="main__info-vacant">
@@ -102,9 +87,7 @@
                   </li>
                   <li class="contacts__item github">
                     GitHub:
-                    <a href="http://"
-                      ><a href="https://github.com/uladban">uladban</a></a
-                    >
+                    <a href="https://github.com/uladban">uladban</a>
                   </li>
                   <li class="contacts__item tel">
                     Tel: <a href="tel:+375296998786">+375 29 699 87 86</a>
@@ -125,34 +108,56 @@
             </section>
             <aside class="skills" id="skills">
               <div class="skills__wrapper">
-              <h2 class="skills_title">
-                Skills
-              </h2>
-              <ul class="skills__list">
-                <li class="skills__item html">HTML</li>
-                <li class="skills__item css">CSS</li>
-                <li class="skills__item figma">Figma</li>
-                <li class="skills__item github">Git, Github</li>
-                <li class="skills__item javascript">JavaScript(a little)</li>
-              </ul>
-            </div>
+                <h2 class="skills_title">Skills</h2>
+                <ul class="skills__list">
+                  <li class="skills__item html">HTML</li>
+                  <li class="skills__item css">CSS</li>
+                  <li class="skills__item figma">Figma</li>
+                  <li class="skills__item github">Git, Github</li>
+                  <li class="skills__item javascript">JavaScript(a little)</li>
+                </ul>
+              </div>
             </aside>
             <section class="education" id="education">
               <div class="education__wrapper">
                 <h2 class="educatrion__title">Education and Courses</h2>
                 <ul class="education__list">
-                  <li class="education__item"><a href="https://bntu.by/en/faculties/fitr" class="education__link">Belarusian National Technical University - Faculty of Information Technology and Robotics</a></li>
-                  <li class="education__item"><a href="http://bseu.by/english/faculty12/faculty12.htm" class="education__link">Belarussian State Economic University - Higher School of Management and Business</a></li>
-                  <li class="education__item"><a href="https://mfs-09.getcourse.ru/public/files/92698/179/badf30ace5bee7722820c534716a4533.png?e=1673913599&s=H-8amzUeN_cHFkZ7_WTL8A" class="education__link">From 0 to 1 – Markup Developer</a></li>
-                  <li class="education__item"><a href="https://app.rs.school/certificate/l9r29fvr" class="education__link">RS-School JS Pre-School 2022</a></li>
+                  <li class="education__item">
+                    <a
+                      href="https://bntu.by/en/faculties/fitr"
+                      class="education__link"
+                      >Belarusian National Technical University - Faculty of
+                      Information Technology and Robotics</a
+                    >
+                  </li>
+                  <li class="education__item">
+                    <a
+                      href="http://bseu.by/english/faculty12/faculty12.htm"
+                      class="education__link"
+                      >Belarussian State Economic University - Higher School of
+                      Management and Business</a
+                    >
+                  </li>
+                  <li class="education__item">
+                    <a
+                      href="https://mfs-09.getcourse.ru/public/files/92698/179/badf30ace5bee7722820c534716a4533.png?e=1673913599&s=H-8amzUeN_cHFkZ7_WTL8A"
+                      class="education__link"
+                      >From 0 to 1 – Markup Developer</a
+                    >
+                  </li>
+                  <li class="education__item">
+                    <a
+                      href="https://app.rs.school/certificate/l9r29fvr"
+                      class="education__link"
+                      >RS-School JS Pre-School 2022</a
+                    >
+                  </li>
                 </ul>
               </div>
             </section>
             <aside class="language" id="language">
               <div class="language__wrapper">
-                <h2 class="language__title">
-                  Language
-                </h2>
+                <h2 class="language__title">Language</h2>
                 <ul class="language__list">
                   <li class="language__item">Russian - Native</li>
                   <li class="language__item">Belorussian</li>
@@ -164,7 +169,8 @@
               <div class="employment__wrapper">
                 <h2 class="employment__title">Employment</h2>
                 <p class="employment__text">
-                  sep.2021 - jan.2023 Ltd "BelKompSnabService" Computer Sales Manager
+                  sep.2021 - jan.2023 Ltd "BelKompSnabService" Computer Sales
+                  Manager
                 </p>
               </div>
             </section>
@@ -177,19 +183,41 @@
                   <li class="interests__item reading">Reading</li>
                   <li class="interests__item movies">Movies</li>
                   <li class="interests__item music">Music</li>
-                </ul>                
+                </ul>
               </div>
             </aside>
             <section class="projects" id="projects">
               <div class="projects__wrapper">
-                <h2 class="projects__title">
-                  Projects
-                </h2>
+                <h2 class="projects__title">Projects</h2>
                 <ul class="projects__list">
-                  <li class="projects__item"><a href="https://uladban.github.io/datamola-cv/" class="projects__link">Curriculum vitae</a></li>
-                  <li class="projects__item"><a href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q2/travel/" class="projects__link">Travel</a></li>
-                  <li class="projects__item"><a href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q4/plants/" class="projects__link">Plants</a></li>
-                  <li class="projects__item"><a href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q2/momentum/" class="projects__link">Momentum</a></li>
+                  <li class="projects__item">
+                    <a
+                      href="https://uladban.github.io/datamola-cv/"
+                      class="projects__link"
+                      >Curriculum vitae</a
+                    >
+                  </li>
+                  <li class="projects__item">
+                    <a
+                      href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q2/travel/"
+                      class="projects__link"
+                      >Travel</a
+                    >
+                  </li>
+                  <li class="projects__item">
+                    <a
+                      href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q4/plants/"
+                      class="projects__link"
+                      >Plants</a
+                    >
+                  </li>
+                  <li class="projects__item">
+                    <a
+                      href="https://rolling-scopes-school.github.io/uladban-JSFEPRESCHOOL2022Q2/momentum/"
+                      class="projects__link"
+                      >Momentum</a
+                    >
+                  </li>
                 </ul>
               </div>
             </section>
@@ -200,8 +228,12 @@
     <footer>
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__copy"> copyright &copy 2023</div>
-          <div class="footer__author"><a href="https://github.com/uladban" class="footer__link">Uladzimir Bankouski</a></div>
+          <div class="footer__copy">copyright &copy; 2023</div>
+          <div class="footer__author">
+            <a href="https://github.com/uladban" class="footer__link"
+              >Uladzimir Bankouski</a
+            >
+          </div>
         </div>
       </div>
     </footer>

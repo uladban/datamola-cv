@@ -3,61 +3,61 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
-  src: url("../datamola-cv/fonts/lato-v23-latin-300.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/lato-v23-latin-300.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("../datamola-cv/fonts/lato-v23-latin-300.eot?#iefix")
+    url("./fonts/lato-v23-latin-300.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../datamola-cv/fonts/lato-v23-latin-300.woff2")
+    /* IE6-IE8 */ url("./fonts/lato-v23-latin-300.woff2")
       format("woff2"),
     /* Super Modern Browsers */
-      url("../datamola-cv/fonts/lato-v23-latin-300.woff") format("woff"),
-    /* Modern Browsers */ url("../datamola-cv/fonts/lato-v23-latin-300.ttf")
+      url("./fonts/lato-v23-latin-300.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/lato-v23-latin-300.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("../datamola-cv/fonts/lato-v23-latin-300.svg#Lato") format("svg"); /* Legacy iOS */
+      url("./fonts/lato-v23-latin-300.svg#Lato") format("svg"); /* Legacy iOS */
 }
 /* lato-regular - latin */
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("../datamola-cv/fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/lato-v23-latin-regular.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("../datamola-cv/fonts/lato-v23-latin-regular.eot?#iefix")
+    url("./fonts/lato-v23-latin-regular.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../datamola-cv/fonts/lato-v23-latin-regular.woff2")
+    /* IE6-IE8 */ url("./fonts/lato-v23-latin-regular.woff2")
       format("woff2"),
     /* Super Modern Browsers */
-      url("../datamola-cv/fonts/lato-v23-latin-regular.woff") format("woff"),
-    /* Modern Browsers */ url("../datamola-cv/fonts/lato-v23-latin-regular.ttf")
+      url("./fonts/lato-v23-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/lato-v23-latin-regular.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("../datamola-cv/fonts/lato-v23-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
+      url("./fonts/lato-v23-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
 }
 /* lato-700 - latin */
 @font-face {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  src: url("../datamola-cv/fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/lato-v23-latin-700.eot"); /* IE9 Compat Modes */
   src: local(""),
-    url("../datamola-cv/fonts/lato-v23-latin-700.eot?#iefix")
+    url("./fonts/lato-v23-latin-700.eot?#iefix")
       format("embedded-opentype"),
-    /* IE6-IE8 */ url("../datamola-cv/fonts/lato-v23-latin-700.woff2")
+    /* IE6-IE8 */ url("./fonts/lato-v23-latin-700.woff2")
       format("woff2"),
     /* Super Modern Browsers */
-      url("../datamola-cv/fonts/lato-v23-latin-700.woff") format("woff"),
-    /* Modern Browsers */ url("../datamola-cv/fonts/lato-v23-latin-700.ttf")
+      url("./fonts/lato-v23-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/lato-v23-latin-700.ttf")
       format("truetype"),
     /* Safari, Android, iOS */
-      url("../datamola-cv/fonts/lato-v23-latin-700.svg#Lato") format("svg"); /* Legacy iOS */
+      url("./fonts/lato-v23-latin-700.svg#Lato") format("svg"); /* Legacy iOS */
 }
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
-bode,
+body,
 html {
   font-family: "Lato", sans-serif;
   font-size: 100%;
@@ -82,6 +82,10 @@ li {
 li {
   list-style-type: none;
 }
+nav{
+  padding: 0;
+  margin: 0;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -96,12 +100,15 @@ h2{
   margin-bottom: 0.8rem;
   text-decoration: underline;
 }
+button {
+  background-color: transparent;
+  border: none;
+}
 .container {
-  max-width: 90rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 7.5rem;
-  padding-right: 7.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 /* Header */
@@ -120,14 +127,13 @@ footer {
   padding-bottom: 1rem;
 }
 .header__nav-item {
-  margin-right: 1em;
+  margin-right: 2rem;
 }
 .header__nav-item:last-child{
   margin-right: 0;
 }
 .header__nav-link {
-  text-transform: uppercase;
-  margin-right: 2rem;
+  text-transform: uppercase;  
   font-weight: 600;
   transition: .3s;
   cursor: pointer;
@@ -137,13 +143,16 @@ footer {
   transform: scale(1.2);
   transition: all .3s ease;
 }
+.header__close,
+.header__btn {
+  display: none;
+}
 /* Main info section */
 .main__info {
   padding: 2em; 
 
 }
-.container {
-}
+
 .main__info-wrapper {
   display: flex;
   align-items: center;
@@ -170,7 +179,7 @@ footer {
   content: '';
   position: absolute;
   width: 100%;
-  height: 0.1rem;
+  height: 2px;
   top: 2rem;
   left: 0;
   background: #000;
@@ -180,15 +189,12 @@ footer {
 }
 .inner{
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 35% 65%;
   gap: 1rem;
 }
 /* Aside Contacts */
-.contacts {
-  
-}
-.container {
-}
+
+
 .contacts__wrapper,
 .about__wrapper,
 .skills__wrapper,
@@ -203,11 +209,8 @@ footer {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.contacts__title {
-  
-}
-.contacts__list {
-}
+
+
 .contacts__item,
 .skills__item,
 .education__item,
@@ -215,8 +218,10 @@ footer {
 .interests__item,
 .projects__item {
   position: relative;
-  padding-left: 1.5rem;
+  padding-left: 1.5rem;  
+  cursor: pointer;  
 }
+
 .contacts__item::after,
 .skills__item::after,
 .education__item::after,
@@ -234,19 +239,19 @@ footer {
   background-size: contain;
 }
 .adress::after {
-  background-image: url(../datamola-cv/icons/location.png);  
+  background-image: url(..//icons/location.png);  
 }
 .e-mail::after {
-  background-image: url(../datamola-cv/icons/mail.png);
+  background-image: url(..//icons/mail.png);
 }
 .telegram::after {
-  background-image: url(../datamola-cv/icons/telegram.png);
+  background-image: url(..//icons/telegram.png);
 }
 .github::after {
-  background-image: url(../datamola-cv/icons/github.png);
+  background-image: url(..//icons/github.png);
 }
 .tel::after {
-  background-image: url(../datamola-cv/icons/phone-call.png);
+  background-image: url(..//icons/phone-call.png);
 }
 .contacts__item::after:hover{
   transform: scale(1.2);
@@ -254,42 +259,41 @@ footer {
 }
 
 .html::after {
-  background-image: url(../datamola-cv/icons/html.png);
+  background-image: url(../icons/html.png);
 }
 .css::after {
-  background-image: url(../datamola-cv/icons/css.png);
+  background-image: url(../icons/css.png);
 }
 .figma::after {
-  background-image: url(../datamola-cv/icons/figma.png);
+  background-image: url(../icons/figma.png);
 }
 .javascript::after {
-  background-image: url(../datamola-cv/icons/script.png);
+  background-image: url(../icons/script.png);
 }
 .education__item::after,
 .projects__item::after{
-  background-image: url(../datamola-cv/icons/arrow-right.png);
+  background-image: url(../icons/arrow-right.png);
 }
 .language__item::after{
-  background-image: url(../datamola-cv/icons/language.png);
+  background-image: url(../icons/language.png);
 }
 
 .soccer::after {
-  background-image: url(../datamola-cv/icons/football.png);
+  background-image: url(../icons/football.png);
 }
 .running::after {
-  background-image: url(../datamola-cv/icons/running-man.png);
+  background-image: url(../icons/running-man.png);
 }
 .reading::after {
-  background-image: url(../datamola-cv/icons/reading-book.png);
+  background-image: url(../icons/reading-book.png);
 }
 .movies::after {
-  background-image: url(../datamola-cv/icons/video.png);
+  background-image: url(../icons/video.png);
 }
 .music::after {
-  background-image: url(../datamola-cv/icons/headphones.png);
+  background-image: url(../icons/headphones.png);
 }
-.container {
-}
+
 .footer__wrapper {
   margin-top: 2rem;
   display: flex;
@@ -309,8 +313,49 @@ footer {
   width: 1.5rem;
   height: 1.5rem;
   content: '';
-  background-image: url(../datamola-cv/icons/github-mark-white.png);  
+  background-image: url(../icons/github-mark-white.png);  
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media  (max-width: 1140px){
+  .container{
+    max-width: 1100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media  (max-width: 1045px){
+  .container {
+    max-width: 1100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+}
+@media  (max-width: 980px){
+  body, html{
+    font-size: 90%;
+  }
+}
+@media (max-width: 860px){
+  .header__nav-item{
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 815px){
+  aside{
+    font-size: 75%;
+  }
+}
+@media (max-width: 760px){
+  .container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .main__info-wrapper{
+    flex-direction: column;
+  }
+  .profile_foto{
+    margin-bottom: 1rem;
+  }
 }
