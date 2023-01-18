@@ -427,7 +427,7 @@ footer {
     background-color: #fff;
   }
   .header__nav-list {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: 0.5s all linear;
     background-color: rgb(49, 65, 109);
     border-radius: 10px;
